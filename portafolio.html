@@ -4,31 +4,35 @@
     <title>Portafolio | Fotografía Maldonado</title>
     <meta charset="utf-8">
     <meta name="desciption">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://cdn.rawgit.com/escueladigital/EDgrid/1f5abcec/css/ed-grid.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://file.myfontastic.com/gqoUBUxf6tMn3QmEz2s7iV/icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles-dist.css">
   </head>
-  <body>
-    <header class="main-header"><a href="/"> <img class="logo" src="img/logo.svg" alt="Logo de la empresa"></a>
+  <body class="portafolio">
+    <header class="main-header">
+      <div class="logo-container"><a href="/"> <img class="logo" src="img/logo.svg" alt="Logo de la empresa"></a></div>
       <nav class="menu">
         <ul>
-          <li><a href="index.html">inicio</a></li>
           <li><a href="nosotros.html">nosotros</a></li>
           <li><a href="servicios.html">servicios</a></li>
-          <li><a href="portafolio.html">portafolio</a></li>
+          <li><a class="active" href="portafolio.html">portafolio</a></li>
           <li><a href="contacto.html">contacto</a></li>
         </ul>
       </nav>
     </header>
-    <div><img src="/img/portafolio.jpg">
+    <div class="main-banner"><img src="/img/portafolio.jpg">
     </div>
-    <main>
-      <h1>Bienvenidos</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quod quis nihil ipsum voluptate doloribus vel esse numquam? Asperiores nam modi nulla nemo, alias fuga inventore voluptatibus? Rerum, incidunt aliquam!</p>
-    </main>
-    <aside>
-      <div class="siguenos"><a href="http://facebook.com">Síguenos en Facebook</a><a href="http://twitter.com">Síguenos en Twitter</a></div>
-    </aside>
-    <footer>
+    <div class="main-content">
+      <main>
+        <h1>Bienvenidos</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quod quis nihil ipsum voluptate doloribus vel esse numquam? Asperiores nam modi nulla nemo, alias fuga inventore voluptatibus? Rerum, incidunt aliquam!</p>
+      </main>
+      <aside class="main-sidebar">
+        <div class="siguenos"><a class="icon-facebook-official" href="http://facebook.com">Síguenos en Facebook</a><a class="icon-twitter-square" href="http://twitter.com">Síguenos en Twitter</a></div>
+      </aside>
+    </div>
+    <footer class="main-footer">
       <p>Fotografía Maldonado - Todos los derechos reservados</p>
     </footer>
   </body>

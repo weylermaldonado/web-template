@@ -7,23 +7,29 @@ html
         title #{pageTitle} | #{siteTitle}
         meta(charset="utf-8")
         meta(name='desciption' content=desciption)
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
         link(rel="stylesheet", href="https://cdn.rawgit.com/escueladigital/EDgrid/1f5abcec/css/ed-grid.min.css")
-        link(rel="stylesheet", href="/css/styles.css")
-    body
+        link(href="https://file.myfontastic.com/gqoUBUxf6tMn3QmEz2s7iV/icons.css",rel="stylesheet")
+        link(rel="stylesheet", href="/css/styles-dist.css")
+    body(class=currentPage)
         header.main-header
-            a(href="/") 
-                img(src="img/logo.svg", alt="Logo de la empresa").logo
+            .logo-container
+                a(href="/") 
+                    img(src="img/logo.svg", alt="Logo de la empresa").logo
             nav.menu
-                include ../blocks/menu.pug   
-        div
+                include ../blocks/menu.pug  
+                 
+        div.main-banner
             block banner
                 img(src='/img/' + currentPage  + '.jpg')
-        main
-            block main
-        aside
-            block aside
-                if siguenos
-                    include ../blocks/siguenos.pug
-        footer
+
+        .main-content
+            main
+                block main
+            aside.main-sidebar
+                block aside
+                    if siguenos
+                        include ../blocks/siguenos.pug
+        footer.main-footer
             p Fotografía Maldonado - Todos los derechos reservados
             block footer

@@ -1,23 +1,59 @@
+/*Base (SMACSS)*/
+a {
+    color: hsl(120, 84%, 70%);
+}
+
+body {
+    line-height: 1.5;
+    color: #444;
+}
+/*Layout*/
+.main-sidebar {
+    margin-top: 2em;
+    
+}
+.main-content {
+    padding: 0 1em;
+}
+@media screen and (min-width: 768px) {
+    .main-content {
+        display: flex;
+        padding-right: 1em;
+    }
+    .main-sidebar {
+        width: 25%;
+        padding-left: 1em;
+
+    }
+    main {
+        width: 75%;
+       
+    }
+    
+}
+@media screen and (min-width: 1024px) {
+    .main-content {
+        max-width: 1024px;
+        margin: auto;
+    }
+   
+}
+
+/*Header*/
 .logo {
-    width: 200px;
+    width: 140px;
+    display: block;
+    margin: 1em auto;
 
 }
-
-.main-header {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    width: 100%;
+.menu {
+    background: hsl(120, 30%, 50%);
+    padding: .5em 0;
 }
-
 .menu ul {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: 0 0 0 auto;
     list-style: none;
 }
@@ -30,6 +66,53 @@
     margin: 0 .5em;
 }
 
+.menu a {
+    text-transform: uppercase;
+    font-size: .8em;
+    color: #fff;
+    line-height: 2;
+}
+
+@media screen and (min-width: 640px) {
+    .menu li {
+        margin: 0 1.5em;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .menu {
+        background: none;
+        margin-left: auto;
+    }
+    .menu li {
+        margin: 0 .5em;
+    }
+    .menu a {
+        color:  hsl(120, 30%, 50%);
+        display: block;
+        line-height: 2.5;
+        padding: 0 1em;
+    }
+    .menu a:hover {
+        background: hsl(120, 30%, 50%);
+        color: #fff;
+        text-decoration: none;
+        
+    } 
+    .main-header {
+        max-width: 1024px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        padding: 0 1em;
+    }
+
+}
+
+/*Fin header*/
+
+h1 {
+    color: hsl(120, 30%, 50%);
+}
 footer {
     background: #333333;
     color:  #ddd;
@@ -43,8 +126,35 @@ footer a {
     color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+    .main-footer .siguenos {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.siguenos {
+    border-top: 1px solid gray;
+    padding-top: 1em;
+}
 .siguenos a{
-    display: inline-block;
-    margin: 0 .5em;
+    display: block;
     font-size: .9em;
+}
+
+.siguenos a::before {
+    display: inline-block;
+    margin-right: .3em;
+}
+
+.inicio main {
+    width: 100%;
+}
+
+.inicio .main-sidebar {
+    display: none;
+}
+
+.contacto .main-banner {
+    margin-bottom: 2em;
 }
