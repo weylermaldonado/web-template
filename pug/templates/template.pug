@@ -1,0 +1,29 @@
+block config
+    include ../config/config.pug
+
+doctype html
+html 
+    head
+        title #{pageTitle} | #{siteTitle}
+        meta(charset="utf-8")
+        meta(name='desciption' content=desciption)
+        link(rel="stylesheet", href="https://cdn.rawgit.com/escueladigital/EDgrid/1f5abcec/css/ed-grid.min.css")
+        link(rel="stylesheet", href="/css/styles.css")
+    body
+        header.main-header
+            a(href="/") 
+                img(src="img/logo.svg", alt="Logo de la empresa").logo
+            nav.menu
+                include ../blocks/menu.pug   
+        div
+            block banner
+                img(src='/img/' + currentPage  + '.jpg')
+        main
+            block main
+        aside
+            block aside
+                if siguenos
+                    include ../blocks/siguenos.pug
+        footer
+            p Fotografía Maldonado - Todos los derechos reservados
+            block footer
