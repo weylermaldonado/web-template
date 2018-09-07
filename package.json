@@ -1,0 +1,24 @@
+{
+  "name": "web-template",
+  "version": "1.0.0",
+  "description": "Generic template",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/weylermaldonado/web-template.git"
+  },
+  "author": "Weyler Maldonado",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weylermaldonado/web-template/issues"
+  },
+  "homepage": "https://github.com/weylermaldonado/web-template#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pug": "^2.0.3"
+  }
+}

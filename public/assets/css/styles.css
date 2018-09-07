@@ -1,4 +1,4 @@
-/*Base (SMACSS)*/
+
 a {
     color: hsl(120, 84%, 70%);
 }
@@ -41,7 +41,7 @@ body {
 
 /*Header*/
 .logo {
-    width: 140px;
+    width: 50px;
     display: block;
     margin: 1em auto;
 

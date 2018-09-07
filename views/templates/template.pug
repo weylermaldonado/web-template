@@ -10,18 +10,18 @@ html
         meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
         link(rel="stylesheet", href="https://cdn.rawgit.com/escueladigital/EDgrid/1f5abcec/css/ed-grid.min.css")
         link(href="https://file.myfontastic.com/gqoUBUxf6tMn3QmEz2s7iV/icons.css",rel="stylesheet")
-        link(rel="stylesheet", href="/css/styles-dist.css")
+        link(rel="stylesheet", href="assets/css/styles.css")
     body(class=currentPage)
         header.main-header
             .logo-container
                 a(href="/") 
-                    img(src="img/logo.svg", alt="Logo de la empresa").logo
+                    img(src="assets/img/logo.png", alt="Logo de la empresa").logo
             nav.menu
                 include ../blocks/menu.pug  
                  
         div.main-banner
             block banner
-                img(src='/img/' + currentPage  + '.jpg')
+                img(src='assets/img/' + currentPage  + '.jpg')
 
         .main-content
             main
