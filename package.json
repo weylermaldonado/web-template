@@ -19,6 +19,7 @@
   "homepage": "https://github.com/weylermaldonado/web-template#readme",
   "dependencies": {
     "express": "^4.16.3",
+    "jstransformer-markdown-it": "^2.1.0",
     "pug": "^2.0.3"
   }
 }
