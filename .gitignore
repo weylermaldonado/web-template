@@ -2,6 +2,5 @@
 *.html
 node_modules/ 
 /.idea
-*.iws
-workspace.xml
-tasks.xml
+/.idea/*.iws
+/.idea/*.xml
