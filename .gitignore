@@ -5,3 +5,4 @@ node_modules/
 /.idea/*.iws
 /.idea/*.xml
 /.idea/inspectionPrfiles/
+*.env
